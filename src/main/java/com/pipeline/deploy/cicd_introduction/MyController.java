@@ -14,6 +14,10 @@ public class MyController  {
     public List<Product> getProductList()
     {
       return Arrays.asList(
+              new Product(108,"Refrigetor",10000f),
+              new Product(109,"Water Purifier",70000f),
+              new Product(1010,"Alexa",10000f),
+              new Product(1011,"Cooler",89000f),
               new Product(101,"Laptop",100000f),
               new Product(102,"Phone",70000f),
               new Product(103,"Watch",10000f),
