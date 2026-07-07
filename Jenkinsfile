@@ -23,5 +23,14 @@ pipeline {
                 '''
             }
         }
+
+        stage('Health Check'){
+            steps {
+                sh '''
+                sleep 10
+                curl fail http://localhost:8080/products/product_list1
+                   '''
+            }
+        }
     }
 }
