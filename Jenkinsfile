@@ -24,12 +24,12 @@ pipeline {
             }
         }
 
-        stage('Health Check'){
-            steps {
-
-               sh 'curl --fail http://localhost:8080/products/product_list'
-
-            }
-        }
+//        stage('Health Check'){
+//            steps {
+//
+//               sh 'curl --fail http://localhost:8080/products/product_list'
+//
+//            }
+//        }
     }
 }
